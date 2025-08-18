@@ -34,7 +34,13 @@ namespace RealEstate.Api.Controllers
             page = Math.Max(1, page);
             pageSize = Math.Clamp(pageSize, 1, 50);
             if (minPrice.HasValue && maxPrice.HasValue && minPrice > maxPrice)
-                return ValidationProblem("minPrice no puede ser mayor que maxPrice");
+            {
+                return BadRequest(new
+                {
+                    errors = new { minPrice = "minPrice cannot be greater than maxPrice" }
+                });
+            }
+
 
             var filter = Builders<Property>.Filter.Empty;
 
