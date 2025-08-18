@@ -22,6 +22,10 @@ https://realestate-api-k012.onrender.com/api/Properties/{id}
 Ejemplo:
 https://realestate-api-k012.onrender.com/api/Properties/68a24ec8beb2e9de8aee268b
 
+TEST
+![tests](https://github.com/ronalc90/realestate-api/actions/workflows/tests.yml/badge.svg)
+
+
 ========================================
 STACK
 ========================================
