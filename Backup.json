@@ -1,0 +1,410 @@
+[{
+  "_id": {
+    "$oid": "68a24ec8beb2e9de8aee268b"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Modern Loft",
+  "address": "Cra 7 #123-45, Bogotá",
+  "price": 450000000,
+  "imageUrl": "https://picsum.photos/seed/loft/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f00"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Modern Loft NYC",
+  "address": "123 Main St, New York, NY, USA",
+  "price": 950000,
+  "imageUrl": "https://picsum.photos/seed/prop01/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f01"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Beachfront Condo Miami",
+  "address": "200 Ocean Dr, Miami, FL, USA",
+  "price": 780000,
+  "imageUrl": "https://picsum.photos/seed/prop02/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f02"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Downtown Studio LA",
+  "address": "700 Spring St, Los Angeles, CA, USA",
+  "price": 520000,
+  "imageUrl": "https://picsum.photos/seed/prop03/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f03"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Suburban House Chicago",
+  "address": "415 Oak Ave, Chicago, IL, USA",
+  "price": 610000,
+  "imageUrl": "https://picsum.photos/seed/prop04/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f04"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Penthouse SF",
+  "address": "88 Market St, San Francisco, CA, USA",
+  "price": 1650000,
+  "imageUrl": "https://picsum.photos/seed/prop05/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f05"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Townhouse Seattle",
+  "address": "55 Pine St, Seattle, WA, USA",
+  "price": 740000,
+  "imageUrl": "https://picsum.photos/seed/prop06/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f06"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Riverside Apartment Austin",
+  "address": "301 River St, Austin, TX, USA",
+  "price": 560000,
+  "imageUrl": "https://picsum.photos/seed/prop07/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f07"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Mountain Cabin Denver",
+  "address": "12 Aspen Way, Denver, CO, USA",
+  "price": 480000,
+  "imageUrl": "https://picsum.photos/seed/prop08/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f08"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Historic Flat Boston",
+  "address": "9 Beacon St, Boston, MA, USA",
+  "price": 830000,
+  "imageUrl": "https://picsum.photos/seed/prop09/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f09"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Modern Condo Atlanta",
+  "address": "110 Peachtree St, Atlanta, GA, USA",
+  "price": 450000,
+  "imageUrl": "https://picsum.photos/seed/prop10/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f0a"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Desert Villa Phoenix",
+  "address": "220 Camelback Rd, Phoenix, AZ, USA",
+  "price": 690000,
+  "imageUrl": "https://picsum.photos/seed/prop11/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f0b"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Lakeview House Dallas",
+  "address": "75 Lakeside Dr, Dallas, TX, USA",
+  "price": 640000,
+  "imageUrl": "https://picsum.photos/seed/prop12/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f0c"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Urban Loft Houston",
+  "address": "400 Main St, Houston, TX, USA",
+  "price": 590000,
+  "imageUrl": "https://picsum.photos/seed/prop13/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f0d"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Coastal Home San Diego",
+  "address": "950 Sunset Cliffs Blvd, San Diego, CA, USA",
+  "price": 1200000,
+  "imageUrl": "https://picsum.photos/seed/prop14/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f0e"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Eco House Portland",
+  "address": "18 Hawthorne Blvd, Portland, OR, USA",
+  "price": 520000,
+  "imageUrl": "https://picsum.photos/seed/prop15/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f0f"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Brick Rowhome Philadelphia",
+  "address": "600 Market St, Philadelphia, PA, USA",
+  "price": 570000,
+  "imageUrl": "https://picsum.photos/seed/prop16/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f10"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Capitol View DC",
+  "address": "10 Constitution Ave NW, Washington, DC, USA",
+  "price": 1150000,
+  "imageUrl": "https://picsum.photos/seed/prop17/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f11"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Family Home Orlando",
+  "address": "330 Lake Nona Blvd, Orlando, FL, USA",
+  "price": 430000,
+  "imageUrl": "https://picsum.photos/seed/prop18/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f12"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Waterfront Condo Tampa",
+  "address": "120 Bayshore Blvd, Tampa, FL, USA",
+  "price": 610000,
+  "imageUrl": "https://picsum.photos/seed/prop19/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f13"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Music Row Loft Nashville",
+  "address": "24 Music Sq W, Nashville, TN, USA",
+  "price": 540000,
+  "imageUrl": "https://picsum.photos/seed/prop20/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f14"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Loft Chapinero",
+  "address": "Calle 59 #7-45, Bogotá, Colombia",
+  "price": 380000,
+  "imageUrl": "https://picsum.photos/seed/prop21/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f15"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Casa Poblado",
+  "address": "Cra 30 #10-25, Medellín, Colombia",
+  "price": 520000,
+  "imageUrl": "https://picsum.photos/seed/prop22/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f16"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Apartamento San Antonio",
+  "address": "Cra 5 #2-15, Cali, Colombia",
+  "price": 270000,
+  "imageUrl": "https://picsum.photos/seed/prop23/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f17"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Casa Altamira",
+  "address": "Calle 85 #74-12, Barranquilla, Colombia",
+  "price": 410000,
+  "imageUrl": "https://picsum.photos/seed/prop24/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f18"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Colonial Getsemaní",
+  "address": "Calle 25 #10-18, Cartagena, Colombia",
+  "price": 650000,
+  "imageUrl": "https://picsum.photos/seed/prop25/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f19"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Penthouse Cabecera",
+  "address": "Cra 35 #48-90, Bucaramanga, Colombia",
+  "price": 490000,
+  "imageUrl": "https://picsum.photos/seed/prop26/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f1a"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Casa Campestre Pereira",
+  "address": "Km 3 Vía Armenia, Pereira, Colombia",
+  "price": 560000,
+  "imageUrl": "https://picsum.photos/seed/prop27/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f1b"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Mirador Chipre",
+  "address": "Av. Centenario 12-34, Manizales, Colombia",
+  "price": 330000,
+  "imageUrl": "https://picsum.photos/seed/prop28/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f1c"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Apartamento Rodadero",
+  "address": "Cra 1 #10-50, Santa Marta, Colombia",
+  "price": 420000,
+  "imageUrl": "https://picsum.photos/seed/prop29/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f1d"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Casa Llano Alto",
+  "address": "Calle 15 #42-21, Villavicencio, Colombia",
+  "price": 280000,
+  "imageUrl": "https://picsum.photos/seed/prop30/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f1e"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Apto El Vergel",
+  "address": "Cra 4 #37-60, Ibagué, Colombia",
+  "price": 250000,
+  "imageUrl": "https://picsum.photos/seed/prop31/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f1f"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Casa La Cocha",
+  "address": "Calle 20 #16-10, Pasto, Colombia",
+  "price": 230000,
+  "imageUrl": "https://picsum.photos/seed/prop32/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f20"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Apto La Riviera",
+  "address": "Av. 0 #12-45, Cúcuta, Colombia",
+  "price": 260000,
+  "imageUrl": "https://picsum.photos/seed/prop33/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f21"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Casa Norte Montería",
+  "address": "Cra 14 #56-20, Montería, Colombia",
+  "price": 240000,
+  "imageUrl": "https://picsum.photos/seed/prop34/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f22"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Apto San Pedro",
+  "address": "Calle 8 #1-25, Neiva, Colombia",
+  "price": 210000,
+  "imageUrl": "https://picsum.photos/seed/prop35/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f23"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100001",
+  "name": "Loft Armenia Norte",
+  "address": "Cra 14 #8N-33, Armenia, Colombia",
+  "price": 275000,
+  "imageUrl": "https://picsum.photos/seed/prop36/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f24"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100002",
+  "name": "Casa Valledupar 12",
+  "address": "Calle 12 #19-20, Valledupar, Colombia",
+  "price": 260000,
+  "imageUrl": "https://picsum.photos/seed/prop37/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f25"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100003",
+  "name": "Apto Sincelejito",
+  "address": "Cra 25 #24-18, Sincelejo, Colombia",
+  "price": 220000,
+  "imageUrl": "https://picsum.photos/seed/prop38/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f26"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100004",
+  "name": "Casa Colonial Popayán",
+  "address": "Calle 5 #7-10, Popayán, Colombia",
+  "price": 350000,
+  "imageUrl": "https://picsum.photos/seed/prop39/800/600"
+},
+{
+  "_id": {
+    "$oid": "68a287d9beb2e9de8aee2f27"
+  },
+  "ownerId": "66c03f2f9b1d4d0f0c100005",
+  "name": "Duplex Centro Tunja",
+  "address": "Cra 9 #19-32, Tunja, Colombia",
+  "price": 200000,
+  "imageUrl": "https://picsum.photos/seed/prop40/800/600"
+}]
