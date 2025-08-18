@@ -27,27 +27,20 @@ https://realestate-api-k012.onrender.com/api/Properties/68a24ec8beb2e9de8aee268b
 
 
 ========================================
-STACK
-========================================
-- .NET 8 (ASP.NET Core Web API, C#)
-- MongoDB Atlas (driver oficial)
-- Docker (multi-stage)
-- Swagger / OpenAPI
+Tech stack: .NET 8 (ASP.NET Core Web API), C#, MongoDB Driver, Swagger/OpenAPI, Docker (multi-stage), NUnit
 
 ========================================
 ARQUITECTURA (RESUMEN)
 ========================================
-- Models/Property.cs → entidad persistida en Mongo:
-  { _id, ownerId, name, address, price, imageUrl }
+Models/Property.cs → entidad Mongo: _id, ownerId, name, address, price, imageUrl
 
-- Dtos/PropertyDto.cs → contrato de salida (solo campos requeridos en el reto):
-  { "IdOwner", "Name", "AddressProperty", "PriceProperty", "ImageUrl" }
+Dtos/PropertyDto.cs → contrato de salida (según reto): IdOwner, Name, AddressProperty, PriceProperty, ImageUrl
 
-- Data/MongoContext.cs → conexión a Atlas, acceso a DB/colecciones e índices en: price, name, address.
+Data/MongoContext.cs → conexión a Atlas, DB/colecciones; índices en price, name, address
 
-- Controllers/PropertiesController.cs → endpoints de listado (con filtros/paginación/orden) y detalle.
+Controllers/PropertiesController.cs → listado (filtros/orden/paginación) y detalle
 
-- JSON en PascalCase (configurado en Program.cs).
+JSON en PascalCase configurado en Program.cs
 
 ========================================
 ESTRUCTURA
@@ -59,11 +52,24 @@ RealEstate.Api/
  │   └─ MongoContext.cs
  ├─ Dtos/
  │   └─ PropertyDto.cs
+ ├─ Filters/
+ │   └─ PropertyFilter.cs
+ ├─ Validators/
+ │   └─ PropertyFilterValidator.cs
  ├─ Models/
  │   └─ Property.cs
+ ├─ Properties/
+ │   └─ launchSettings.json
  ├─ Program.cs
  ├─ appsettings.json
- └─ Dockerfile
+ ├─ appsettings.Development.json
+ ├─ Dockerfile
+ └─ .dockerignore
+
+RealEstate.Tests/
+ ├─ PropertiesControllerTests.cs
+ └─ PropertyFilterValidatorTests.cs
+
 
 ========================================
 CONFIGURACIÓN
@@ -79,16 +85,31 @@ Variables opcionales:
 ========================================
 EJECUTAR LOCAL CON DOCKER
 ========================================
-1) Construir la imagen:
-   docker build -t realestate-api ./RealEstate.Api
 
-2) Ejecutar:
-   docker run -p 8080:8080 ^
-     -e ASPNETCORE_ENVIRONMENT=Development ^
-     -e MONGODB_URI="mongodb+srv://<user>:<pass>@<cluster>/<db>?retryWrites=true&w=majority" ^
-     -e Mongo__Database=realestate ^
-     -e Mongo__PropertiesCollection=properties ^
-     realestate-api
+Bash (Linux/macOS/Git Bash)
+docker build -t realestate-api ./RealEstate.Api
+
+docker run -p 8080:8080 \
+  -e ASPNETCORE_ENVIRONMENT=Development \
+  -e MONGODB_URI="mongodb+srv://<user>:<pass>@<cluster>/?retryWrites=true&w=majority" \
+  -e Mongo__Database=realestate \
+  -e Mongo__PropertiesCollection=properties \
+  realestate-api
+
+# Probar
+curl http://localhost:8080/healthz
+# Abrir Swagger: http://localhost:8080/swagger
+
+PowerShell (Windows)
+
+docker build -t realestate-api .\RealEstate.Api
+
+docker run -p 8080:8080 `
+  -e ASPNETCORE_ENVIRONMENT=Development `
+  -e MONGODB_URI="mongodb+srv://<user>:<pass>@<cluster>/?retryWrites=true&w=majority" `
+  -e Mongo__Database=realestate `
+  -e Mongo__PropertiesCollection=properties `
+  realestate-api
 
 3) Probar:
    http://localhost:8080/healthz
