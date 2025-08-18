@@ -31,7 +31,6 @@ namespace RealEstate.Api.Controllers
             [FromQuery] string? sort = null,
             CancellationToken ct = default)
         {
-            // Validaciones ligeras
             page = Math.Max(1, page);
             pageSize = Math.Clamp(pageSize, 1, 50);
             if (minPrice.HasValue && maxPrice.HasValue && minPrice > maxPrice)
@@ -39,7 +38,6 @@ namespace RealEstate.Api.Controllers
 
             var filter = Builders<Property>.Filter.Empty;
 
-            // Prefijo anclado ^ para que los índices ayuden
             if (!string.IsNullOrWhiteSpace(name))
                 filter &= Builders<Property>.Filter.Regex(p => p.Name,
                     new BsonRegularExpression("^" + Regex.Escape(name), "i"));
@@ -53,7 +51,6 @@ namespace RealEstate.Api.Controllers
 
             var query = _db.Properties.Find(filter);
 
-            // Orden
             query = sort switch
             {
                 "price" => query.SortBy(p => p.Price),
@@ -70,7 +67,6 @@ namespace RealEstate.Api.Controllers
                 .Limit(pageSize)
                 .ToListAsync(ct);
 
-            // Map a DTO con los campos pedidos
             var dto = items.Select(p => new PropertyDto(
                 IdOwner: p.OwnerId,
                 Name: p.Name,

@@ -20,7 +20,6 @@ public class MongoContext
         Db = client.GetDatabase(opts.Value.Database);
         Properties = Db.GetCollection<Property>(opts.Value.PropertiesCollection);
 
-        // Índices básicos (precio, nombre, dirección)
         var idx = new List<CreateIndexModel<Property>>
         {
             new(Builders<Property>.IndexKeys.Ascending(p => p.Price)),

@@ -8,6 +8,5 @@ public class PropertyFilter
     public decimal? MaxPrice { get; set; }
     public int Page { get; set; } = 1;
     public int PageSize { get; set; } = 20;
-    // sort: "price", "-price", "name", "-name"
     public string? Sort { get; set; }
 }
