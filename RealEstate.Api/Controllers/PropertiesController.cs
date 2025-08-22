@@ -74,12 +74,13 @@ namespace RealEstate.Api.Controllers
                 .ToListAsync(ct);
 
             var dto = items.Select(p => new PropertyDto(
+                Id: p.Id!,              
                 IdOwner: p.OwnerId,
                 Name: p.Name,
                 AddressProperty: p.Address,
                 PriceProperty: p.Price,
                 ImageUrl: p.ImageUrl
-            ));
+            )); 
 
             return Ok(new { items = dto, total, page, pageSize });
         }
@@ -88,17 +89,18 @@ namespace RealEstate.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id, CancellationToken ct = default)
         {
+            if (!ObjectId.TryParse(id, out _)) return NotFound();    
             var prop = await _db.Properties.Find(p => p.Id == id).FirstOrDefaultAsync(ct);
             if (prop is null) return NotFound();
 
             var dto = new PropertyDto(
+                Id: prop.Id!,                 
                 IdOwner: prop.OwnerId,
                 Name: prop.Name,
                 AddressProperty: prop.Address,
                 PriceProperty: prop.Price,
                 ImageUrl: prop.ImageUrl
             );
-
             return Ok(dto);
         }
     }
